@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💙Ukraine💛</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #e6f9ff;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 35px;
+        color: #0073e6;
+      }
+      h2 {
+        font-family: "Roboto", sans-serif;
+        color: grey;
+      }
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        color: grey;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.8;
+      }
+      hr {
+        display: block;
+        background-color: #0073e6;
+        height: 2px;
+        margin: 20px 0;
+      }
+      span {
+        font-family: "Kaushan Script", cursive;
+        font-size: 18px;
+        color: #0073e6;
+      }
+      strong {
+        color: #0073e6;
+        font-size: 20px;
+      }
+      iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 30px;
+      }
+      a {
+        display: block;
+        margin-bottom: 20px;
+        text-align: left;
+        text-decoration: none;
+        color: #0073e6;
+        font-size: 18px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      em {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 40px;
+        color: #ffff00;
+
+        font-family: "Kaushan Script", cursive;
+        background: #0073e6;
+        border: 3px solid #ffff00;
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 22px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #0073e6;
+        background: #ffff00;
+        border: 3px solid #1a64d6;
+        font-family: "Kaushan Script", cursive;
+      }
+      .container {
+        background-color: #ffffe6;
+        width: 60%;
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: rgba(37, 39, 89, 0.5) 0 20px 20px 0;
+      }
+      .borders {
+        border: 4px solid #ffff00;
+        outline: 4px solid #0073e6;
+        border-radius: 3px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>💙 Welcome to Ukraine! 💛</h1>
+      <h2>Let's explore this beautiful country</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/777/original/Collage_Maker-19-Jun-2022-06.21-PM.jpg?1655659284"
+        alt="the Ukrainian picturesque"
+        width="550px"
+        class="borders"
+      />
+      <hr />
+      <p>
+        <span
+          >Ancient castles or natural wonders? Seaside holiday or mountain
+          hiking? Pink lakes or sand deserts? It’s hard to believe — but Ukraine
+          has it all. And many more discoveries you wouldn’t expect!</span
+        >
+        <br />
+        <strong> Ukraine </strong>is a beautiful country with its tremendous
+        history and stunning natural reserves. Ukraine’s nature, architecture,
+        and landscapes are truly breathtaking, and its culture is strong in many
+        traditions: music, art, cuisine, and more. The country has deep customs,
+        wealthy talent, and a long cultural legacy. People there are known for
+        their soft and generous hospitality, even when they’re facing the most
+        difficult times in their lives.
+        <br />
+        Today, people all over the world feel inspired by the brave defenders
+        fighting on the streets and outskirts of the attacked cities. The
+        Ukrainian flag is everywhere — waved in the air by thousands marching in
+        protests, draped from the balconies in both big and small cities,
+        attached as pins to the jackets of everyone showing support. People are
+        ready to help, showing great faith in the future of this land.
+      </p>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Ukraine" target="_blank"
+        >Read more on Wikipedia</a
+      >
+      <br />
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/18vr4oiwO7c"
+        class="borders"
+      >
+      </iframe>
+      <p>
+        <em>
+          Click "Visit UA" for choosing the best places for traveling in Ukraine
+        </em>
+      </p>
+      <button>Visit UA</button>
+    </div>
+    <script>
+      function visitUA() {
+        let name = prompt("What's your name?");
+        let choosing = prompt(
+          "What do you like the most - mountains or sea? Enter 🅼 for 🏔️, 🆂 for 🌊"
+        ).toLowerCase();
+        if (choosing === "m") {
+          alert(name + ", you should visit the Carpatian Mountains 🏞️");
+        } else if (choosing === "s") {
+          alert(
+            name +
+              ", you should visit the Black Sea, or the Shatsk Lakes, or the salted pink lakes 🏖️"
+          );
+        } else {
+          alert(name + ", something was wrong!");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", visitUA);
+    </script>
+  </body>
+</html>
